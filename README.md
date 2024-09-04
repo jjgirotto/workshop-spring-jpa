@@ -1,4 +1,4 @@
-# Sistema de Gestão de Estacionamento
+# Sistema de Pedidos
 
 Esta é uma aplicação utilizando Spring e JPA com o modelo da imagem abaixo:
 ![domain-model](https://github.com/user-attachments/assets/f734cc8a-89e0-4943-b2fd-e7df438b5273)
