@@ -38,7 +38,6 @@ public class OrderItem implements Serializable {
         id.setOrder(order);
     }
 
-
     public Product getProduct() {
         return id.getProduct();
     }
@@ -62,6 +61,9 @@ public class OrderItem implements Serializable {
     public void setPrice(Double price) {
         this.price = price;
     }
+    public Double getSubTotal() {
+        return price * quantity;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -70,9 +72,9 @@ public class OrderItem implements Serializable {
         OrderItem orderItem = (OrderItem) o;
         return Objects.equals(id, orderItem.id);
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(id);
     }
+
 }
